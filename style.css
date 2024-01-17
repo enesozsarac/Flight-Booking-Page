@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background-color: #3d5cb8;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  border-bottom-color: #fff;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #3d5cb8;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #334c99;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #0f172a;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+.header-container .section-header {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.booking-container {
+  border-radius: 2rem;
+  border: 1px solid #f1f5f9;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking-nav {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+}
+
+.booking-nav span {
+  flex: 1;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-nav span:nth-child(2) {
+  color: #fff;
+  background-color: #3d5cb8;
+}
+
+.booking-container form {
+  margin: 4rem;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 1rem;
+}
+
+.booking-container .input-content {
+  width: 100%;
+}
+
+.booking-container .form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.booking-container .form-group span {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #0f172a;
+  background-color: #f1f5f9;
+  border-radius: 1rem;
+}
+
+.booking-container .input-group {
+  width: 100%;
+  position: relative;
+}
+
+.booking-container label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0f172a;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.booking-container input:focus ~ label {
+  font-size: 0.8rem;
+  top: 0;
+}
+
+.booking-container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3d5cb8;
+  color: #0f172a;
+}
+
+.booking-container .form-group p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.booking-container .btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.booking-container .btn {
+  background-color: #3d5cb8;
+  color: #fff;
+}
+
+.plan-container .subheader {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: 5px;
+}
+
+.plan-container .section-header {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.plan-container .description {
+  text-align: center;
+  color: #64748b;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.plan-container .number {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3d5cb8;
+  border-radius: 2rem;
+}
+
+.plan-content .number:nth-child(4) {
+  background-color: #e98b6d;
+}
+
+.plan-content .number:nth-child(7) {
+  background-color: #ffcca3;
+}
+
+.plan-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.plan-content p {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.plan-image {
+  position: relative;
+}
+
+.plan-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan-image img:nth-child(1) {
+  max-width: 250px;
+  transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+  z-index: 3;
+}
+
+.plan-image img:nth-child(2) {
+  max-width: 260px;
+  transform: translate(-50%, calc(-50% - 5rem));
+  z-index: 2;
+}
+
+.plan-image img:nth-child(3) {
+  max-width: 230px;
+  transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
+  z-index: 0;
+}
+
+.memories {
+  background-color: #f1f5f9;
+}
+
+.memories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.memories-header .section-header {
+  max-width: 600px;
+}
+
+.memories-header .view-all {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f172a;
+  background: transparent;
+  white-space: nowrap;
+  outline: none;
+  border: 1px solid #64748b;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.view-all:hover {
+  background-color: #334c99;
+  color: #f1f5f9;
+}
+
+.memories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.memories-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 5rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.memories-card span {
+  display: inline-block;
+  padding: 20px 32px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #3d5cb8;
+  border-radius: 100%;
+}
+
+.memories-card:nth-child(2) span {
+  background-color: #e98b6d;
+}
+
+.memories-card:nth-child(3) span {
+  background-color: #ffcca3;
+}
+
+.memories-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.memories-card p {
+  color: #64748b;
+  line-height: 1.75rem;
+}
+
+.lounge-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.lounge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.lounge-image {
+  position: relative;
+}
+
+.lounge-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lounge-image img:nth-child(1) {
+  max-width: 300px;
+  transform: translate(calc(-50% - 3rem), -50%);
+}
+
+.lounge-image img:nth-child(2) {
+  max-width: 200px;
+  transform: translate(calc(-50% + 6rem), calc(-50% + 7rem));
+}
+
+.lounge-details h4 {
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.lounge-details p {
+  color: #64748b;
+}
+
+.travellers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.travellers-card {
+  border-radius: 5rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.travellers-card:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.traveller-card-content {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+.traveller-card-content img {
+  position: absolute;
+  max-width: 70px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #f1f5f9;
+  border-radius: 100%;
+}
+
+.traveller-card-content h4 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.traveller-card-content p {
+  font-weight: 500;
+  color: #64748b;
+}
+
+.subscribe {
+  background-color: #f1f5f9;
+}
+
+.subscribe-container {
+  max-width: 500px;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 5px;
+  border-radius: 2rem;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.subscribe-form .btn {
+  background: #3d5cb8;
+  color: #f1f5f9;
+}
+
+.subscribe-form .btn:hover {
+  background: #334c99;
+  color: #f1f5f9;
+}
+
+.footer {
+  background-color: #3d5cb8;
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer-col p {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.footer-bar p {
+  font-size: 0.9rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials span{
+  font-size: 1.2rem;
+}
+
+
+@media (width < 1200px) {
+  .section-container.header-container,
+  .section-container.plan-container,
+  .section-container.lounge-container {
+    overflow: hidden;
+  }
+
+  .memories-grid {
+    gap: 3rem;
+  }
+}
+
+@media (width < 900px) {
+  nav .btn {
+    display: none;
+  }
+
+  .header-container img {
+    min-width: 900px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .booking-container form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plan-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .plan-image {
+    min-height: 600px;
+    grid-area: 1/1/2/2;
+  }
+
+  .memories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .lounge-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lounge-image {
+    min-height: 600px;
+  }
+
+  .travellers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+}
+@media (width < 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .booking-nav span {
+    padding: 1rem 0.5rem;
+  }
+
+  .booking-container form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .memories-header {
+    flex-direction: column;
+  }
+
+  .memories-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lounge-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .travellers-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
